@@ -1,0 +1,64 @@
+<!-- Required attribute it gives error without checking or filling it.It means mendatory -->
+<!-- readonly attribute user can see it but does not change it -->
+<!-- disabled attribute in this You cannot interact with field -->
+<!-- min,max will be used in number,date,range -->
+<!-- maxlength how many character can be type -->
+<!-- patteren using regex for customer validation -->
+<!-- autocomplete browser auto-remember values -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms with Advance Attributes</title>
+</head>
+
+<body>
+
+    <form action="" method="post">
+
+        <!-- Full Name -->
+        <label>Full Name:</label>
+        <input type="text" name="fullName" placeholder="Enter Your name..." maxlength="20" required>
+        <br><br>
+
+        <!-- Age -->
+        <label>Age:</label>
+        <input type="number" name="age" placeholder="Enter Your Age..." min="18" max="40" required>
+        <br><br>
+
+        <!-- Email -->
+        <label>Email:</label>
+        <input type="email" name="email" placeholder="Enter Your email..." required autocomplete="on">
+        <br><br>
+
+        <!-- Phone -->
+        <label>Phone:</label>
+        <input type="text" name="phone" placeholder="Enter Your number..." pattern="[0-9]{11}" required>
+        <br><br>
+
+        <!-- Date of Birth -->
+        <label>Date of Birth:</label>
+        <input type="date" name="dob" max="2025-11-26" required>
+        <br><br>
+
+        <!-- CNIC -->
+        <label>CNIC:</label>
+        <input type="text" name="cnic" placeholder="Enter Your CNIC..." pattern="[0-9]{5}-[0-9]{7}-[0-9]"
+            autocomplete="off" required>
+        <br><br>
+
+        <!-- Username -->
+        <label>Username:</label>
+        <input type="text" name="username" value="Ahsan Malik" readonly>
+        <br><br>
+
+        <input type="submit" value="Submit">
+
+    </form>
+
+</body>
+
+</html>

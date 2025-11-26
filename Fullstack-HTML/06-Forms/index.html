@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body>
+
+    <form action="" method="POST">
+        <!-- We add name attribute for backend communication -->
+
+        <label>Full Name:</label>
+        <input type="text" name="fullName" placeholder="Enter Your name...">
+        <br><br>
+
+        <label>Email:</label>
+        <input type="email" name="email" placeholder="Enter Your email...">
+        <br><br>
+
+        <label>Password:</label>
+        <input type="password" name="password" placeholder="Enter Your password...">
+        <br><br>
+
+        <label>Age:</label>
+        <input type="number" name="age" placeholder="Enter Your Age...">
+        <br><br>
+
+        <label>Date of Birth:</label>
+        <input type="date" name="dob">
+        <br><br>
+
+        <!-- Make sure radio input has same name attribute because if name is different from others it will select both -->
+        <label>Gender:</label>
+        <input type="radio" name="gender" value="male"> Male
+        <input type="radio" name="gender" value="female"> Female
+        <br><br>
+
+        <label>Skills:</label>
+        <input type="checkbox" name="skills" value="html"> HTML
+        <input type="checkbox" name="skills" value="css"> CSS
+        <input type="checkbox" name="skills" value="js"> JS
+        <br><br>
+
+        <label>Profile Picture:</label>
+        <input type="file" name="profilePic">
+        <br><br>
+
+        <input type="submit" value="Submit">
+
+    </form>
+
+</body>
+
+</html>
